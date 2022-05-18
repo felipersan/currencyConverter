@@ -14,7 +14,7 @@ export default function Picker(props) {
       placeholder={placeholder}
       items={props.moedas}
       onValueChange={value => {
-        console.log(value);
+        props.onChange(value);
       }}
     />
   );
